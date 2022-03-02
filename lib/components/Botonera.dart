@@ -6,27 +6,43 @@ class Botonera extends StatelessWidget{
  @override
   Widget build(BuildContext context) {
       return Padding(
-      padding: EdgeInsets.symmetric(vertical:16.0),
+      padding: EdgeInsets.symmetric(vertical:320.0),
     child: Row(
 
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children:<Widget> [
-              Icon(Icons.check, color: Colors.yellow,),
-
-              FlatButton.icon(onPressed: (){}
-            icon: Icon(
+              Column(
+                children: [
+                  Icon(Icons.check, color: Colors.yellow,),
+                  SizedBox(height: 3.0),
+            Text("My list",
+            style:  TextStyle(color: Colors.blue, fontSize: 15.0),
+            ),
+                ],
+              ),
+            RaisedButton.icon(onPressed: (){},
+                icon: Icon(
               Icons.play_arrow,
               color: Colors.white,
             ),
               label: Text("Play", style: TextStyle(
-                color: Colors.white, 
-                fontSize: 12.0,
+                color: Colors.black,
+                fontSize: 16.0,
               ),
               ),
               ),
-              Icon(Icons.info_outline , color: Colors.white),
-                ],
-              ),
+   Column(
+   children: [
+   Icon(Icons.info_outline_rounded, color: Colors.yellow,),
+   SizedBox(height: 3.0),
+   Text("Info",
+   style:  TextStyle(color: Colors.blue, fontSize: 15.0),
+   ),
+   ],
+   ),
+
+ ],
+      ),
       );
   }
   

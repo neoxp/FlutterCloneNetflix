@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'Principal_Cartel.dart';
+import 'Cartel_principal.dart';
+import 'ItemRedondeado.dart';
+import 'item_redondo.dart';
+
 
 class MainPage extends StatelessWidget{
 
@@ -11,11 +14,20 @@ class MainPage extends StatelessWidget{
       backgroundColor: Colors.black,
       body: Column(
         children: <Widget>[
-   
-          CartelPricipal()
+          CartelPricipal(),
+          Container(
+            height: 110.0,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                Avances(),
+                ItemRedondeado(),
+              ],
+            ),
+          ),
 
       ],
-      ),    
+      ),
     );
   }
 }

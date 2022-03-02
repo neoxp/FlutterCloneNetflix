@@ -5,9 +5,9 @@ class InfoSeries extends StatelessWidget{
  @override
   Widget build(BuildContext context) {
       return Padding(
-      padding: EdgeInsets.symmetric(vertical:12.0),
+      padding: EdgeInsets.symmetric(vertical:300.0),
       child:Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
        children: <Widget>[
             Text("Accion", style: TextStyle(color: Colors.white, fontSize: 14.0)
             ,),

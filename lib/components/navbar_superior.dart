@@ -6,27 +6,26 @@ class NavBarSuperior extends StatelessWidget{
   Widget build(BuildContext context) {
 
    return Padding(
-      padding: EdgeInsets.symmetric(12.0),
+      padding: EdgeInsets.symmetric(vertical: 12.0),
       child:Row(
      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children:<Widget> [
-          Image.network("https://w7.pngwing.com/pngs/750/919/png-transparent-logo-brand-line-line.png", 
-          width: 30.0, 
-          height: 30.0,
+          Image.network("https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Netflix-new-icon.png/768px-Netflix-new-icon.png",
+          width: 50.0,
+          height: 50.0,
           ),
-        Text("Programs",style: TextStyle(color:Colors.green, fontSize: 16.0
+        Text("Programs",style: TextStyle(color:Colors.green, fontSize: 19.0
         ),
         ),
-        Text("Movies",style: TextStyle(color:Colors.green, fontSize: 16.0
+        Text("Movies",style: TextStyle(color:Colors.green, fontSize: 19.0
         ),
         ),
-        Text("Series",style: TextStyle(color:Colors.green, fontSize: 16.0
+        Text("Series",style: TextStyle(color:Colors.green, fontSize: 19.0
         ),
         ),
       ],
    ),
    );
-
 
   }
 }
